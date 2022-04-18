@@ -1,8 +1,49 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" style="-fx-background-color: DEF7FE;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutX="-5.0" prefHeight="63.0" prefWidth="526.0" style="-fx-background-color: C6D8FF;">
+         <children>
+            <Label layoutX="77.0" text="Network Chat">
+               <font>
+                  <Font name="Times New Roman" size="66.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="49.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/724923_message_512x512.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="showText" layoutX="15.0" layoutY="87.0" prefHeight="251.0" prefWidth="389.0">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="enterText" layoutX="15.0" layoutY="350.0" prefHeight="35.0" prefWidth="214.0" promptText="enter text..." />
+      <ButtonBar layoutX="202.0" layoutY="348.0" prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <Button fx:id="deleteAll" minWidth="49.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: C6D8FF;" text="delete">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="sendMessage" mnemonicParsing="false" prefHeight="35.0" prefWidth="57.0" style="-fx-background-color: C6D8FF;" text="send">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </buttons></ButtonBar>
+   </children>
+</AnchorPane>
